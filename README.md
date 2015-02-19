@@ -1,5 +1,5 @@
 # tmobileEESMS
-A simple Python script for t-mobile/EE user to send SMS without opening the browser
+A simple Python script for t-mobile/EE UK user to send SMS without opening the browser
 
 ## Requirement
 This script requires Requests library. You can install it easily by:
