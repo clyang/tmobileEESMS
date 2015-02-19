@@ -9,7 +9,7 @@ recipients = ["07XXXXXXXXX", "07XXXXXXXXX"]
 session = tmobileLogin(username, password)
 if session:
     for number in recipients:
-         # NOTE! You need to retrieve new a token for each sms
+         # NOTE! You need to retrieve a new token for each sms
         token = tmobileGetSendToken(session)
         if token:
             # send the messge
