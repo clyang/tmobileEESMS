@@ -3,7 +3,6 @@ import re
 
 def tmobileLogin(username, password):
     s = requests.Session()
-    data = {'username': username, 'password': password}
     result = s.get("https://tmobile.ee.co.uk/service/your-account/default-tm-login/")
     match = re.search('name="org\.apache\.struts\.taglib\.html\.TOKEN" value="([a-f0-9]+)"></div>', result.text)
     data = {'username': username, 'password': password, 'org.apache.struts.taglib.html.TOKEN': match.group(1), 'submit': 'Log+In'}
